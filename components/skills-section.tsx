@@ -1,17 +1,35 @@
 import { Badge } from "@/components/ui/badge"
-import { Code2, Database, Globe,Server, GitBranch, Palette } from "lucide-react"
+import {
+  SiReact,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiTypescript,
+  SiPostgresql,
+  SiMongodb,
+  SiGit,
+  SiHtml5,
+  SiCss3,
+  SiPrisma,
+  SiRedux,
+  SiJavascript
+} from 'react-icons/si'
+import { Palette } from 'lucide-react'
+
 
 const skills = [
-  { name: 'React', icon: Code2, category: 'Frontend' },
-  { name: 'Node.js', icon: Server, category: 'Backend' },
-  { name: 'Next.js', icon: Globe, category: 'Frontend' },
-  { name: 'TypeScript', icon: Code2, category: 'Language' },
-  { name: 'PostgreSQL', icon: Database, category: 'Database' },
-  { name: 'MongoDB', icon: Database, category: 'Database' },
-  { name: 'Git', icon: GitBranch, category: 'Tools' },
-  { name: 'UI/UX Design', icon: Palette, category: 'Design' },
+  { name: 'HTML5', icon: SiHtml5, category: 'Frontend' },
+  { name: 'CSS3', icon: SiCss3, category: 'Frontend' },
+  { name: 'JavaScript', icon: SiJavascript, category: 'Language' },
+  { name: 'React', icon: SiReact, category: 'Frontend' },
+  { name: 'Next.js', icon: SiNextdotjs, category: 'Frontend' },
+  { name: 'Redux', icon: SiRedux, category: 'Frontend' },
+  { name: 'Node.js', icon: SiNodedotjs, category: 'Backend' },
+  { name: 'Prisma', icon: SiPrisma, category: 'Backend' },
+  { name: 'TypeScript', icon: SiTypescript, category: 'Language' },
+  { name: 'PostgreSQL', icon: SiPostgresql, category: 'Database' },
+  { name: 'MongoDB', icon: SiMongodb, category: 'Database' },
+  { name: 'Git', icon: SiGit, category: 'Tools' },
 ]
-
 export function SkillsSection() {
   return (
     <section id="skills" className="py-12">

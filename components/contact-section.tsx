@@ -7,6 +7,7 @@ import { Input } from './ui/input'
 import { createMessage } from '@/lib/actions'
 import { toast } from 'sonner'
 import { useRef } from 'react'
+import { CheckCircle, XCircle } from 'lucide-react'
 
 const contactInfo = [
   {
@@ -41,10 +42,14 @@ export function ContactSection() {
   async function handleSubmit(formData: FormData) {
     try {
       await createMessage(formData)
-      toast.success('✅ Message submitted successfully!')
+      toast.success('Message sent successfully!', {
+        icon: <CheckCircle className="text-green-500 w-5 h-5" />,
+      })
       formRef.current?.reset()
     } catch (error) {
-      toast.error('❌ Failed to send message. Please try again.')
+      toast.error('Failed to send message. Please try again.', {
+        icon: <XCircle className="text-red-500 w-5 h-5" />,
+      })
     }
   }
 

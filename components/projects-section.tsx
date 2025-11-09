@@ -5,7 +5,9 @@ import { Github, ExternalLink } from "lucide-react"
 const projects = [
   {
     title: 'Socially',
-    description: `A full-stack social media platform where users can create, edit, delete, comment and share posts with ease.Includes features like likes, profile management, and seamless content sharing for an engaging experience.`,
+    description: `Built a social media platform with features for users to create, edit, and delete posts, along with like, share, and save 
+functionality.Developed user profiles with followers/following system, displaying user posts, connections, and profile details.
+Implemented using Next.js, Prisma, and PostgreSQL, ensuring a scalable, efficient, and responsive web application`,
     image: '/Socially.png',
     github: 'https://github.com/Code-4Al/socialproject',
     live: 'https://socialproject-pied.vercel.app/',
@@ -13,8 +15,10 @@ const projects = [
   },
   {
     title: 'Flowmazon',
-    description: `Developed a full-stack E-Cart web app with Next.js, Prisma, and PostgreSQL, featuring JWT-based authentication and real-time cart updates.  
-      Implemented server actions with Next.js App Router and built a responsive UI using Tailwind CSS for seamless cross-device experience.`,
+    description: ` Developed a full-stack E-Cart web application using Next.js, Prisma ORM, and PostgreSQL with secure JWT-based authentication 
+that enables: User authentication with JWT to ensure secure access and data protection. Cart functionality where authenticated users can add products, view items, and see real-time totals and subtotals.
+Orders page that allows users to place orders with dynamic quantity selection for each product, enabling flexible 
+purchasing.`,
     image: '/e-commerce-web.png',
     github: 'https://github.com/Code-4Al/nextjs-ecommerce-web',
     live: 'https://nextjsecommerceweb.vercel.app/',
@@ -30,13 +34,14 @@ const projects = [
     tech: ['Next.js', 'TypeScript', 'Prisma', 'PostgreSQL'],
   },
   {
-    title: 'Blog App',
-    description:`Developed a full-stack Blog application with user authentication, enabling users to create, edit, and delete posts.  
-    Integrated commenting functionality to foster interaction and engagement within the platform.`,
-    image: '/blog.png',
-    github: 'https://github.com/Code-4Al/blog-web',
-    live: 'https://github.com/Code-4Al/blog-web',
-    tech: ['Node.js', 'Express', 'React', 'MongoDB'],
+    title: 'Chat App',
+    description: ` Developed a real-time chat application using Express.js, JavaScript, and Socket.IO, enabling users to create and join chat 
+     rooms for instant communication and collaboration.Implemented live typing indicators and real-time message broadcasting, enhancing user interactivity and providing a 
+     seamless chat experience across multiple clients.`,
+    image: '/chatapp.png',
+    github: 'https://github.com/Code-4Al/lesson05',
+    live: 'https://chatapp-xsiw.onrender.com/',
+    tech: ['Node.js', 'Express', 'SocketIO', 'JavaScript'],
   },
 ]
 
@@ -57,7 +62,7 @@ export function ProjectsSection() {
                   <img
                     src={project.image || "/placeholder.svg"}
                     alt={project.title}
-                    className="w-full h-48 object-contain group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-48  object-contain group-hover:scale-105 transition-transform duration-300"
                   />
                 </div>
                 <CardHeader>
