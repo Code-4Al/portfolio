@@ -9,7 +9,7 @@ import {
 const experiences = [
   {
     title: 'Cloud Intern ( Gleamator Technologies)',
-    date: '1 May 2025 – 30 May 2025 (1 Month)',
+    date: 'April 2025 –  May 2025',
     description: `
 I completed an intensive on-site internship at Gleamator Technologies LLP, conducted under the AWS Academy Cloud Foundations & Solutions Architect Associate program.
  This internship gave me hands-on experience in core AWS cloud services and real-world cloud infrastructure setups.
@@ -84,9 +84,6 @@ export function ExperienceSection() {
     </section>
   )
 }
-
-
-
 
 // import {
 //   Card,
